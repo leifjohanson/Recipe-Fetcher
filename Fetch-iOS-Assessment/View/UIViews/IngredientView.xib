@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IngredientView" customModule="Fetch_iOS_Assessment" customModuleProvider="target">
+            <connections>
+                <outlet property="ingredientLabel" destination="46C-LM-a8l" id="eUR-1b-0AE"/>
+                <outlet property="ingredientLabelContainerView" destination="3yT-rv-aAv" id="Yki-wH-sdJ"/>
+                <outlet property="quantityLabel" destination="sUv-Au-Ctb" id="HYv-hn-AYU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SJT-AN-IKD">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yT-rv-aAv" userLabel="Ingredient Label View">
+                    <rect key="frame" x="0.0" y="0.0" width="248.33333333333334" height="41"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potatoes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="46C-LM-a8l">
+                            <rect key="frame" x="16.000000000000014" y="8" width="224.33333333333337" height="25"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="textColor" red="0.70024627449999999" green="0.43291473390000001" blue="0.1877659857" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="46C-LM-a8l" secondAttribute="bottom" constant="8" id="EUJ-LJ-dJg"/>
+                        <constraint firstItem="46C-LM-a8l" firstAttribute="leading" secondItem="3yT-rv-aAv" secondAttribute="leading" constant="16" id="dfc-9y-CYt"/>
+                        <constraint firstItem="46C-LM-a8l" firstAttribute="top" secondItem="3yT-rv-aAv" secondAttribute="top" constant="8" id="hWS-xI-TuX"/>
+                        <constraint firstAttribute="trailing" secondItem="46C-LM-a8l" secondAttribute="trailing" constant="8" id="yVZ-Ny-UA4"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqG-Ft-i1G" userLabel="Quantity Label View">
+                    <rect key="frame" x="248.33333333333337" y="0.0" width="165.66666666666663" height="41"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10lbs, peeled" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="sUv-Au-Ctb">
+                            <rect key="frame" x="7.9999999999999716" y="8" width="141.66666666666666" height="25"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="sUv-Au-Ctb" secondAttribute="bottom" constant="8" id="6gG-A8-U5s"/>
+                        <constraint firstAttribute="trailing" secondItem="sUv-Au-Ctb" secondAttribute="trailing" constant="16" id="TuG-eo-Swj"/>
+                        <constraint firstItem="sUv-Au-Ctb" firstAttribute="top" secondItem="EqG-Ft-i1G" secondAttribute="top" constant="8" id="pCH-YZ-6os"/>
+                        <constraint firstItem="sUv-Au-Ctb" firstAttribute="leading" secondItem="EqG-Ft-i1G" secondAttribute="leading" constant="8" id="rWa-UN-z4F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hfd-LX-SEk"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3yT-rv-aAv" firstAttribute="top" secondItem="SJT-AN-IKD" secondAttribute="top" id="4fM-ag-G7V"/>
+                <constraint firstItem="EqG-Ft-i1G" firstAttribute="top" secondItem="SJT-AN-IKD" secondAttribute="top" id="DC2-H0-Kgo"/>
+                <constraint firstItem="3yT-rv-aAv" firstAttribute="leading" secondItem="hfd-LX-SEk" secondAttribute="leading" id="Hq7-In-Xth"/>
+                <constraint firstItem="EqG-Ft-i1G" firstAttribute="trailing" secondItem="hfd-LX-SEk" secondAttribute="trailing" id="J0p-vb-9CX"/>
+                <constraint firstItem="EqG-Ft-i1G" firstAttribute="bottom" secondItem="hfd-LX-SEk" secondAttribute="bottom" id="Tlg-4i-d2b"/>
+                <constraint firstItem="3yT-rv-aAv" firstAttribute="bottom" secondItem="hfd-LX-SEk" secondAttribute="bottom" id="Z6t-1y-igr"/>
+                <constraint firstItem="EqG-Ft-i1G" firstAttribute="leading" secondItem="3yT-rv-aAv" secondAttribute="trailing" id="gOS-TL-fxf"/>
+                <constraint firstItem="3yT-rv-aAv" firstAttribute="width" secondItem="SJT-AN-IKD" secondAttribute="width" multiplier="0.6" id="kDs-Em-Ui0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.34375"/>
+        </view>
+    </objects>
+</document>
