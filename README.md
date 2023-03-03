@@ -24,8 +24,17 @@ Recipe-Fetcher consists of three storyboard screens:
 - A Browse Recipe Screen (Figure 3.1.2)
 - A Recipe Description Screen (Figure 3.1.3 and 3.1.4)
 
+<em>Figure 3.1.1</em>
+<img src="https://user-images.githubusercontent.com/63774420/222625439-bbf32998-a0d1-493b-943c-f59ec712b966.png" height=750>
 
+<em>Figure 3.1.2</em>
+<img src="https://user-images.githubusercontent.com/63774420/222625561-e5c325ba-c417-4733-9695-f67c886a3ad6.png" height=750>
 
+<em>Figure 3.1.3</em>
+<img src="https://user-images.githubusercontent.com/63774420/222625617-e7e65de5-392e-4d6e-b013-a156d1ace04e.png" height=750>
+
+<em>Figure 3.1.4</em>
+<img src="https://user-images.githubusercontent.com/63774420/222625679-3d37ac44-0ed2-4c5b-82e9-a8db3db8d370.png" height=750>
 
 
 The Welcome Screen consists of a chef image, the app title, and a "Get Started" button. Once the user taps on the Get Started button, they are shown the Browse Recipe Screen, with recipe results from the "Beef" category. The user can then change the category, or select one of the results. Once they've select a result, they then are brought to the Recipe Description Screen, which presents a detailed description of the selected recipe.
@@ -57,6 +66,9 @@ This user is able to select any of these categories, and once they click the res
 Since this application is consistently using the Internet to get API requests, a strong network connection is essential for efficient use of this application. In the case that the user doesn't, results and especially images can take a while to load.
 
 For images, a web source takes a while to load. So, when formulating all the results, the result views (ResultView.xib) are given a default image of Apple's system image "circles.hexagonpath.fill" (Figure 4.2.1). This will then get changed to the actual recipe image when the application has successfully retrieved the image from the url. Similar to this, the description can take a bit to load, so by default, the title says "Fetching your delicious recipes, please wait..." before the data has been successfully retried by the API (this is usually much quicker than the image).
+
+<em>Figure 4.2.1</em>
+<img src="https://user-images.githubusercontent.com/63774420/222625837-88afc1f0-2421-4e34-b27e-7b9544a75150.jpg" height=200>
 
 These are implemented to show the user that the app itself is not broken, but their network is slow. If this application were to be production ready, a time-out timer would be implemented to show the user that their internet is too slow.
 
