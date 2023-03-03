@@ -83,7 +83,7 @@ class BrowseViewController: UIViewController, RecipeListManagerDelegate {
     
     
     
-    // MARK: - RecipeManagerDelegate Methods
+    // MARK: - RecipeListManagerDelegate Methods
     
     func didUpdateRecipes(_ recipeManager: RecipeListManager, recipeList: [RecipeListModel]) {
         DispatchQueue.main.async {
@@ -197,7 +197,7 @@ class BrowseViewController: UIViewController, RecipeListManagerDelegate {
     
     // MARK: - EnableCategoryTaps()
     
-    // Sets UITapGestureRecognizers to
+    // Sets UITapGestureRecognizers to each view
     func enableCategoryTaps() {
         for curView in categoryViews {
             let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleCategoryTap(_:)))

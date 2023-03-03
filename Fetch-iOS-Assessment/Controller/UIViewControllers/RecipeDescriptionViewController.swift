@@ -13,6 +13,7 @@ class RecipeDescriptionViewController: UIViewController, RecipeManagerDelegate {
     
     @IBOutlet weak var recipeTitleLabel: UILabel!
     @IBOutlet weak var recipeImageView: UIImageView!
+    @IBOutlet weak var imageGradientView: GradientView!
     
     @IBOutlet weak var ingredientsInstructionsControl: UISegmentedControl!
     
@@ -38,6 +39,7 @@ class RecipeDescriptionViewController: UIViewController, RecipeManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageGradientView.roundBottomCorners(cornerRadius: 40)
         recipeImageView.roundBottomCorners(cornerRadius: 40)
         recipeManager.delegate = self
         recipeManager.getRecipe(id: mealID)
